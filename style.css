@@ -524,3 +524,100 @@
     color: #595959;
 }
 
+/* ========================= */
+/* MOBILE-FIRST NAVIGATION   */
+/* ========================= */
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .nav-bar {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .menu {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding-bottom: 20px;
+    }
+
+    .menu a {
+        padding: 10px 0;
+        display: block;
+    }
+
+    #menu-toggle:checked ~ .menu {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .login-button {
+        display: none;
+    }
+
+    /* HERO TEXT STACK */
+    .frame-249 {
+        position: static;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .your-resume p {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .frame-239,
+    .Group-12 {
+        display: none; /* hide floating images on mobile */
+    }
+
+    /* BUTTON STACK */
+    .frame-32 {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .btn-1,
+    .btn-2 {
+        width: 100%;
+    }
+
+    /* WHAT YOU GET → STACK CARDS */
+    .frame-551 {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .frame-297,
+    .frame-298,
+    .frame-299,
+    .frame-300 {
+        width: 90%;
+    }
+
+}
+
+
