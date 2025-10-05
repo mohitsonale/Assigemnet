@@ -157,6 +157,11 @@
     font-weight: bold;
 }
 
+.your-resume img{
+    position: absolute;
+    top:198px;
+}
+
 .your-resume span {
     color: #FA1239;
 }
